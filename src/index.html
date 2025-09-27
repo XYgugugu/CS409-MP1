@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav id="navbar">
+    <ul class="StickNavbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#mv">MV</a></li>
+      <li><a href="#footer">MTJJ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <header>
+      <h1>The Legend of Luo Xiaohei (罗小黑战记)</h1>
+      <p>This has been my favorite animation ever since its first release in 2011.</p>
+    </header>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>ABOUT</h2>
+    <div class="about-columns">
+      <div class="about-left">
+        <p><strong>罗小黑战记 (The Legend of Luo Xiaohei)</strong> is a flash animation and webtoon series developed by Chinese artist <strong>MTJJ</strong>. It began in 2011 and quickly gained a cult following for its unique aesthetic, charming characters, and heartfelt storytelling.</p>
+      </div>
+      <div class="about-right">
+        <p>The story follows Luo Xiaohei, a cat spirit navigating a world between humans and the supernatural. The animation explores deep themes of identity and freedom while staying accessible through expressive visuals and lovable characters.</p>
+      </div>
+    </div>
+
+    <div class="watch-button">
+      <button id="watchNowBtn" class="about-link-button">Watch Now</button>
+    </div>
+
+    <div id="watchModal" class="watch-modal">
+      <div class="watch-modal-content">
+        <span class="watch-close-btn" id="closeWatchModal">&times;</span>
+        <h3>Choose a Platform</h3>
+        <div class="watch-platform-links">
+          <a href="https://www.youtube.com/channel/UCPVlLWXABJgR3SEkqbZLnxw" target="_blank" class="watch-platform youtube">
+            <i class="fa-brands fa-youtube"></i> YouTube
+          </a>
+          <a href="https://www.bilibili.com/bangumi/media/md1733/" target="_blank" class="watch-platform bilibili">
+            <img src="https://www.bilibili.com/favicon.ico" alt="Bilibili" style="width: 1.2rem; height: 1.2rem;"> Bilibili
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="carousel">
+      <button class="nav prev" aria-label="Previous Slide">&#10094;</button>
+      <div class="carousel-track">
+        <img src="./assets/lxh5.jpg" alt="LuoXiaohei 1" />
+        <img src="./assets/lxh3.jpg" alt="LuoXiaohei 2" />
+        <img src="./assets/lxh2.jpg" alt="LuoXiaohei 3" />
+        <img src="./assets/lxh4.jpg" alt="LuoXiaohei 4" />
+        <img src="./assets/lxh7.jpg" alt="LuoXiaohei 5" />
+      </div>
+      <button class="nav next" aria-label="Next Slide">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- MV Section -->
+  <section id="mv">
+    <h2>MV: Good Night Meow</h2>
+    <video width="640" height="360" controls>
+      <source src="./assets/goodnight_meow.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>Author: MTJJ</p>
+    <div class="social-icons">
+      <a href="https://x.com/lxhcat" target="_blank" aria-label="MTJJ on X">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://m.weibo.cn/u/2019071187?jumpfrom=weibocom" target="_blank" aria-label="MTJJ on Weibo">
+        <i class="fa-brands fa-weibo"></i>
+      </a>
+    </div>
+  </footer>
+
+</body>
 </html>
